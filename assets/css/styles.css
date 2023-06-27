@@ -1,0 +1,69 @@
+:root {
+    --bcolor: #EEEEF7;
+    --hcolor: #30353D;
+    --lcolor: #445877;
+    --icolor: #92CCCE;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bcolor);
+}
+
+header {
+    padding: 10px 0px 10px 0px;
+background-color: var(--hcolor);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 40px;
+    padding: 0px 20px 0px 50px;
+    background-color: var(--icolor);
+    color: #30353D;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--icolor);
+    text-decoration: underline;
+}
+
+.hero {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/02-hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    
+    color: var(--lcolor);
+    font-size: 40px;
+    display: inline;
+}
+
+p {
+    color: var(--lcolor);
+    font-size: 25px;
+    display: inline;
+    
+}
+
