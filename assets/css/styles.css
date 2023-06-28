@@ -13,57 +13,89 @@
 
 body {
     background-color: var(--bcolor);
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
 header {
     padding: 10px 0px 10px 0px;
 background-color: var(--hcolor);
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 header h1 {
-    display: inline-block;
+    display: flex;
     font-size: 40px;
-    padding: 0px 20px 0px 50px;
+    /* padding: 0px 20px 0px 50px; */
     background-color: var(--icolor);
     color: #30353D;
+    justify-content: right;
+}
+#About-me {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
-header nav {
-    padding-top: 15px;
+header ul {
     margin-right: 20px;
-    float: right;
-    font-size: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 120%;
+    gap: 30px;
 }
 header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+    display: flex;
 }
 
-a {
+header nav ul a {
     color: var(--icolor);
-    text-decoration: underline;
+    border-bottom: solid 3px var(--icolor);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.background {
+    position: relative;
+}
+
+.subtitle-background {
+    right: 5%;
+    bottom: 25px;
+    position: absolute;
+    font-size: 150%;
+    font-weight: bold;
+    color: var(--hcolor);
+    background-color: var(--icolor);
 }
 
 .hero {
-    height: 150px;
+    height: 240px;
     width: 100%;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     background-image: url("../images/02-hero-bg.jpg");
     background-size: cover;
-    background-position: center;
 }
 
 h2 {
-    
-    color: var(--lcolor);
-    font-size: 40px;
-    display: inline;
+    display: flex;
+    justify-content: end;
+    border-right: 3px solid var(--lcolor);
+    width: 20%;
+    font-size: 200%;
 }
 
-p {
-    color: var(--lcolor);
-    font-size: 25px;
-    display: inline;
-    
+p{
+    display: flex;
+    width: 80%;
 }
+
+
+
 
