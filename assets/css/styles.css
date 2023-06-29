@@ -18,7 +18,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
-
+/* Header section */
 header {
     padding: 10px 0px 10px 0px;
     background-color: var(--hcolor);
@@ -30,11 +30,16 @@ header {
 header h1 {
     display: flex;
     font-size: 40px;
-    /* padding: 0px 20px 0px 50px; */
     background-color: var(--icolor);
     color: #30353D;
     justify-content: right;
 }
+
+main {
+    margin: 2%;
+}
+
+
 #About-me {
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +162,6 @@ a:link {
 .hero {
     height: 240px;
     width: 100%;
-    /* margin-bottom: 25px; */
     background-image: url("../images/02-hero-bg.jpg");
     background-size: cover;
 }
@@ -168,6 +172,7 @@ h2 {
     border-right: 3px solid var(--lcolor);
     width: 20%;
     font-size: 200%;
+    color: var(--lcolor);
 }
 
 p{
@@ -175,6 +180,44 @@ p{
     width: 80%;
 }
 
+.contact {
+    width: 80%;
+}
 
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 100%;
+    font-size: 125%;
+}
 
+.contact ul li {
+    color: var(--lcolor);
+    border-bottom: solid 3px var(--lcolor);
+    flex-basis: auto;
+}
+
+.contact ul li a:visited{
+    color: var(--lcolor);
+}
+
+.contact ul li a:link {
+    color: var(--lcolor);
+}
+@media screen and ( max-width: 768px) {
+    header,
+    main, {
+        flex-direction: column;
+    }
+    section {
+        padding-right: 0;
+    }
+}
