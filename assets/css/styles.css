@@ -214,7 +214,7 @@ p{
 }
 @media screen and ( max-width: 768px) {
     header,
-    main, {
+    main {
         flex-direction: column;
     }
     section {
